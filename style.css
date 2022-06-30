@@ -47,7 +47,6 @@ figcaption {
 	font-size: 18px;
 	border-radius: 8px;
 	background-color: #8589fe;
-	filter: drop-shadow(0 0 5px rgba(0, 0, 0, .75));
 }
 figcaption:before {
 	content: "";
