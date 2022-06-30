@@ -38,8 +38,7 @@ figure img {
 	height: 100%;
 	-webkit-user-drag: none;
 }
-figure:before {
-	content: attr(data-text);
+figcaption {
 	position: absolute;
 	top: 0;
 	z-index: 10;
@@ -47,17 +46,33 @@ figure:before {
 	padding: 12px;
 	font-size: 18px;
 	border-radius: 8px;
-	background-color: #36154dC8;
+	background-color: #8589fe;
 	filter: drop-shadow(0 0 5px rgba(0, 0, 0, .75));
 }
-figure.balloon-right:before {
+figcaption:before {
+	content: "";
+	position: absolute;
+	bottom: -24px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 24px 12px 0 12px;
+	border-color: #8589fe transparent transparent transparent;
+}
+figcaption.balloon-right {
 	right: 0;
 	transform: translate(50%, -50%);
 }
-figure:not(.balloon-right):before {
+figcaption:not(.balloon-right) {
 	left: 0;
 	transform: translate(-50%, -50%);
 }
-figure:not([data-text]):before {
+figcaption.balloon-right::before {
+	left: 25%;
+}
+figcaption:not(.balloon-right):before {
+	right: 25%;
+}
+figcaption:empty {
 	display: none;
 }
