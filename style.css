@@ -47,6 +47,7 @@ figcaption {
 	font-size: 18px;
 	border-radius: 8px;
 	background-color: #8589fe;
+	white-space: pre;
 }
 figcaption:before {
 	content: "";
@@ -58,19 +59,26 @@ figcaption:before {
 	border-width: 24px 12px 0 12px;
 	border-color: #8589fe transparent transparent transparent;
 }
-figcaption.balloon-right {
-	right: 0;
-	transform: translate(50%, -50%);
+figcaption.center {
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-figcaption:not(.balloon-right) {
+figcaption.center:before {
+	left: 50%;
+}
+figcaption.left {
 	left: 0;
 	transform: translate(-50%, -50%);
 }
-figcaption.balloon-right::before {
-	left: 25%;
-}
-figcaption:not(.balloon-right):before {
+figcaption.left:before {
 	right: 25%;
+}
+figcaption.right {
+	right: 0;
+	transform: translate(50%, -50%);
+}
+figcaption.right::before {
+	left: 25%;
 }
 figcaption:empty {
 	display: none;
