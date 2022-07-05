@@ -44,7 +44,8 @@ figcaption {
 	z-index: 10;
 	color: #fff;
 	padding: 12px;
-	font-size: 18px;
+	font-family: sans-serif;
+	font-size: 1.75em;
 	border-radius: 8px;
 	background-color: #8589fe;
 	white-space: pre;
@@ -52,7 +53,7 @@ figcaption {
 figcaption:before {
 	content: "";
 	position: absolute;
-	bottom: -24px;
+	bottom: -22px;
 	width: 0;
 	height: 0;
 	border-style: solid;

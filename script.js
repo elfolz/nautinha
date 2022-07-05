@@ -24,11 +24,11 @@ const dialog = [
 		balloon: 'center'
 	},
 	{
-		text: 'E você que ainda nem entrou. Por que ?\nCorre que dá tempo de tirar o atraso!',
+		text: 'E você que ainda nem entrou. Por que?\nCorre que dá tempo de tirar o atraso!',
 		image: '1'
 	},
 	{
-		text: 'As primeiras pessoas que concluírem o Quiz com maior pontuação ficarão na frente.\nO ranking está súper acirrado, então corre!',
+		text: 'As primeiras pessoas que concluírem o Quiz\ncom maior pontuação ficarão na frente.\nO ranking está súper acirrado, então corre!',
 		image: '4',
 	},
 	{
